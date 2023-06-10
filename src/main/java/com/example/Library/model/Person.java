@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 @Entity
 @Table
 public class Person {
-
     @Id
     @SequenceGenerator(
             name = "person_sequence",
@@ -33,5 +32,25 @@ public class Person {
         this.surname = surname;
         this.email = email;
         this.phoneNumber = phoneNumber;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 }

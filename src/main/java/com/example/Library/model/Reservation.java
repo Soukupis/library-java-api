@@ -29,4 +29,24 @@ public class Reservation {
     public Date reservationDate;
 
     public Date returnDate;
+
+    public Long getId() {
+        return id;
+    }
+
+    public Book getBook() {
+        return book;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public Date getReservationDate() {
+        return reservationDate;
+    }
+
+    public Date getReturnDate() {
+        return returnDate;
+    }
 }

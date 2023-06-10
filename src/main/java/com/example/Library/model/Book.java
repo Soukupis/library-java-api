@@ -7,7 +7,6 @@ import java.util.Date;
 @Entity
 @Table
 public class Book {
-
     @Id
     @SequenceGenerator(
             name = "book_sequence",
@@ -56,4 +55,50 @@ public class Book {
         this.pages = pages;
         this.publisher = publisher;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public Date getReleaseDate() {
+        return releaseDate;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+
+
 }
